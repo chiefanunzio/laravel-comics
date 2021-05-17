@@ -1,1 +1,12 @@
-<h2>eccomi sono il footer</h2>
+<section class="contact">
+
+    <div>
+        <ul>
+            
+        </ul>
+    </div>
+</section>
+
+<section class="footer">
+
+</section>

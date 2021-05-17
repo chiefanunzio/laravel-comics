@@ -9,6 +9,36 @@ class comicsController extends Controller
     
     public function comicsFun() {
 
+        $navbar = [
+
+            'CHARACTERS','COMICS','MOVIES','TV','GAMES','COLLECTIBLES','VIDEOS','FAN','NEWS','SHOP'
+        ];
+
+        $merch = [
+
+            [
+                'logo' => '/storage/assets/laravel-comics/buy.png',
+                'desc' => 'DIGITAL COMICS'
+            ],
+            [
+                'logo' => '/storage/assets/laravel-comics/t-shirt.png',
+                'desc' => 'DC MERCHANDISE'
+            ],
+            [
+                'logo' => '/storage/assets/laravel-comics/card.png',
+                'desc' => 'SUBRSRIPTION'
+            ],
+            [
+                'logo' => '/storage/assets/laravel-comics/loc.png',
+                'desc' => 'COMIC SHOP LOCATOR'
+            ],
+            [
+                'logo' => '/storage/assets/laravel-comics/pos.svg',
+                'desc' => 'DC POWER VISA'
+            ],
+
+            ];
+
         $data = [
             [
                 "title" => "Action Comics #1000: The Deluxe Edition",
@@ -223,6 +253,6 @@ class comicsController extends Controller
             ],
         ];
 
-        return view('pages.home', compact('data'));
+        return view('pages.home', compact('data','navbar','merch'));
     }
 } 

@@ -1,0 +1,65 @@
+header{
+
+
+
+    > section{
+        background-color: rgb(78, 78, 247);
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        line-height: 20px;
+        ul{
+            flex-basis: 30%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 10px;
+        }
+    }
+
+    nav{
+        padding: 0 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img{
+
+            width: 60px;
+        }
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            flex-grow: 1;
+            li{
+                line-height: 80px;
+                border-bottom:  4px solid transparent;
+                font-size: 13px;
+                font-weight: bold;
+                &:hover{
+                    cursor: pointer;
+                    border-bottom-color:blue;
+                }
+
+            }
+        }
+    }
+}
+
+.jumbo{
+    height: 45vh;
+    background-image: url('/storage/assets/laravel-comics/jumbotron.jpg');
+    background-position-x:center ;
+    background-size: cover;
+    position: relative;
+ 
+    span{
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        position: absolute;
+        bottom: -20px;
+        left: 300px;
+    }
+   
+}

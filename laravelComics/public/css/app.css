@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  padding: 0 300px;
+}
+
+header > section {
+  background-color: #4e4ef7;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  line-height: 20px;
+}
+
+header > section ul {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+header nav {
+  padding: 0 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav img {
+  width: 60px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+
+header nav ul li {
+  line-height: 80px;
+  border-bottom: 4px solid transparent;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+header nav ul li:hover {
+  cursor: pointer;
+  border-bottom-color: blue;
+}
+
+.jumbo {
+  height: 45vh;
+  background-image: url("/storage/assets/laravel-comics/jumbotron.jpg");
+  background-position-x: center;
+  background-size: cover;
+  position: relative;
+}
+
+.jumbo span {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  position: absolute;
+  bottom: -20px;
+  left: 300px;
+}
+
+.box-container {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #0e0d0d;
+  color: #f1eded;
+}
+
+.box-container .box {
+  width: calc(100% / 6 - 20px);
+  margin: 10px 10px;
+}
+
+.box-container .box div {
+  height: 140px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.box-container .box div img {
+  width: 100%;
+}
+
+.box-container .box div h6 {
+  font-size: 10px;
+}
+
+.box-container span {
+  color: white;
+  padding: 10px 50px;
+  background-color: blue;
+  font-size: 10px;
+  font-weight: bold;
+  margin: 20px auto 0;
+}
+
+.merch {
+  background-color: blue;
+  padding: 40px 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.merch div {
+  display: flex;
+  align-items: center;
+  height: 45px;
+}
+
+.merch div:last-child img {
+  width: 45px;
+}
+
+.merch div img {
+  height: 100%;
+}
+
+.merch div span {
+  color: white;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
