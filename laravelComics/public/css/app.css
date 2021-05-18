@@ -70,12 +70,17 @@ header nav ul li:hover {
   border-bottom-color: #0282f9;
 }
 
+header nav ul li:last-child {
+  border: none;
+}
+
 .jumbo {
   height: 45vh;
   background-image: url("/storage/assets/laravel-comics/jumbotron.jpg");
   background-position-x: center;
   background-size: cover;
   position: relative;
+  overflow: visible;
 }
 
 .jumbo span {
@@ -100,6 +105,11 @@ header nav ul li:hover {
 .box-container .box {
   width: calc(100% / 6 - 20px);
   margin: 10px 10px;
+}
+
+.box-container .box a {
+  text-decoration: none;
+  color: white;
 }
 
 .box-container .box div {

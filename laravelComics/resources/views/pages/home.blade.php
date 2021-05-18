@@ -7,8 +7,10 @@
         <div>
             <img src="{{$elem['thumb']}}" alt="">
         </div>
-
-        <h6>{{strtoupper($elem['series'])}}</h6>
+        
+        <a href="{{route('elem', $loop->index)}}">
+            <h6>{{strtoupper($elem['series'])}}</h6>
+        </a>
     </div>
     
     @endforeach

@@ -10,8 +10,8 @@
     <nav>
         <img src="{{ asset('/storage/assets/laravel-comics/dc-logo.png') }}" alt="">
         <ul>
-            @foreach ($navbar as $elem)
-            <li>{{$elem}}</li>
+            @foreach($navbar as $i)
+            <li>{{$i}}</li>
             @endforeach
             <li> <span class="search">search<i class="fas fa-search"></i></span></li>
         </ul>
