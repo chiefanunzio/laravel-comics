@@ -1,12 +1,14 @@
 .contact{
     background-image: url('/storage/assets/laravel-comics/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 40px 300px;
-    
+    position: relative;
     div{
         display: inline-block;
         vertical-align: top;
         color: $color-grey;
-        padding: 15px;
+        padding: 15px 15px 15px 0;
         ul li{
             font-size: 10px;
         }
@@ -19,9 +21,16 @@
     }
     p{
         color: $color-grey;
+        font-size: 10px;
         span{
             color:$color-blue;
         }
+    }
+    img{
+        position: absolute;
+        bottom: -80px;
+        right: 300px;
+        width: 500px;
     }
 }
 
@@ -31,11 +40,15 @@
     align-items: center;
     background-color: $bg-dark;
     ul{
-        line-height: 80px;
         display: flex;
-        justify-content: center;
+        align-items:center;
+        
         li{
+            line-height: 90px;
             margin-left: 15px;
+            img{
+                width: 20px;
+            }
             &:first-child{
                 color: $color-blue;
             }

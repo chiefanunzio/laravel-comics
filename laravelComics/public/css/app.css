@@ -10,6 +10,7 @@ ul {
 
 section {
   padding: 0 300px;
+  overflow: hidden;
 }
 
 header > section {
@@ -28,6 +29,18 @@ header > section ul {
   font-size: 10px;
 }
 
+header .search {
+  font-weight: bold;
+  font-size: 15px;
+  border-bottom: 2px solid #0282f9;
+  padding: 0 0 0 40px;
+  margin-left: 60px;
+}
+
+header .search i {
+  margin-left: 10px;
+}
+
 header nav {
   padding: 0 300px;
   display: flex;
@@ -41,14 +54,14 @@ header nav img {
 
 header nav ul {
   display: flex;
-  justify-content: space-evenly;
-  flex-grow: 1;
+  justify-content: space-between;
+  flex-basis: 85%;
 }
 
 header nav ul li {
   line-height: 80px;
   border-bottom: 4px solid transparent;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -142,14 +155,17 @@ header nav ul li:hover {
 
 .contact {
   background-image: url("/storage/assets/laravel-comics/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 40px 300px;
+  position: relative;
 }
 
 .contact div {
   display: inline-block;
   vertical-align: top;
   color: #797979;
-  padding: 15px;
+  padding: 15px 15px 15px 0;
 }
 
 .contact div ul li {
@@ -164,10 +180,18 @@ header nav ul li:hover {
 
 .contact p {
   color: #797979;
+  font-size: 10px;
 }
 
 .contact p span {
   color: #0282f9;
+}
+
+.contact img {
+  position: absolute;
+  bottom: -80px;
+  right: 300px;
+  width: 500px;
 }
 
 .footer {
@@ -178,13 +202,17 @@ header nav ul li:hover {
 }
 
 .footer ul {
-  line-height: 80px;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .footer ul li {
+  line-height: 90px;
   margin-left: 15px;
+}
+
+.footer ul li img {
+  width: 20px;
 }
 
 .footer ul li:first-child {

@@ -310,6 +310,15 @@ class comicsController extends Controller
                 
             ]
         ];
+
+        $social = [
+
+            'facebook' => '/storage/assets/laravel-comics/fb.png',
+            'twitter' => '/storage/assets/laravel-comics/twtt.png',
+            'youtube' => '/storage/assets/laravel-comics/yt.png', 
+            'pint' => '/storage/assets/laravel-comics/pint.png',
+            'loc'=> '/storage/assets/laravel-comics/local.png',
+        ];
         
         return view(
             'pages.home', 
@@ -320,7 +329,8 @@ class comicsController extends Controller
                 'dcComics',
                 'shop',
                 'dc',
-                'sites'
+                'sites',
+                'social'
             ));
 
         

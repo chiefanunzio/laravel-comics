@@ -57,6 +57,7 @@
     </div>
     <p>all site content Tm and &copy; 2020 DC Entertainemnt, unless otherwise <span>noted here</span>. All rights reserved.</p>
     <p><span>Cokies Settings</span></p>
+    <img src="{{ asset('/storage/assets/laravel-comics/dc-logo-bg.png') }}" alt="">
 </section>
 
 <section class="footer">
@@ -65,10 +66,8 @@
 <span class="button"> SIGN-UP NOW! </span>
 <ul>
     <li> FOLLOW US</li>
-    <li> s</li> 
-    <li> s</li> 
-    <li> s</li> 
-    <li> s</li> 
-    <li> s</li> 
+    @foreach ($social as $i)
+        <li><img src="{{$i}}" alt=""></li>
+    @endforeach
 </ul>
 </section>

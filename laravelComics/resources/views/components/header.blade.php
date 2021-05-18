@@ -2,8 +2,8 @@
 <header>
     <section>
         <ul>
-            <li>DC POWER sm VISA R</li>
-            <li>ADDITIONAL DC SITES</li>
+            <li>DC POWER &#8480; VISA &reg;</li>
+            <li>ADDITIONAL DC SITES <i class="fas fa-caret-down"></i></li>
         </ul>
     </section>
     
@@ -13,8 +13,9 @@
             @foreach ($navbar as $elem)
             <li>{{$elem}}</li>
             @endforeach
+            <li> <span class="search">search<i class="fas fa-search"></i></span></li>
         </ul>
-        <span>search<i>img</i></span>
+       
     </nav>
 </header>
 
@@ -24,3 +25,4 @@
     </span>
 </section>
     
+                    

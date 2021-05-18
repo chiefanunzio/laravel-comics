@@ -17,6 +17,17 @@ header{
         }
     }
 
+    .search{
+        font-weight: bold;
+        font-size: 15px;
+        border-bottom: 2px solid $color-blue;
+        padding: 0 0 0 40px;
+        margin-left: 60px;
+        i{
+            margin-left: 10px;
+        }
+    }
+
     nav{
         padding: 0 300px;
         display: flex;
@@ -29,12 +40,12 @@ header{
         }
         ul{
             display: flex;
-            justify-content: space-evenly;
-            flex-grow: 1;
+            justify-content: space-between;
+            flex-basis: 85%;
             li{
                 line-height: 80px;
                 border-bottom:  4px solid transparent;
-                font-size: 13px;
+                font-size: 12px;
                 font-weight: bold;
                 &:hover{
                     cursor: pointer;
