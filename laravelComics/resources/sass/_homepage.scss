@@ -5,7 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: rgb(14, 13, 13);
+    background-color: $bg-dark;
     color:rgb(241, 237, 237);
     
     
@@ -35,7 +35,7 @@
     span{
         color: white;
         padding: 10px 50px;
-        background-color:blue;
+        background-color:$color-blue;
         font-size: 10px;
         font-weight: bold;
         margin: 20px auto 0;
@@ -43,7 +43,7 @@
 }
 
 .merch{
-    background-color: blue;
+    background-color: $color-blue;
     padding: 40px 300px;
     display: flex;
     justify-content: space-evenly;

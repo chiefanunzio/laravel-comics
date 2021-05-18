@@ -3,7 +3,7 @@ header{
 
 
     > section{
-        background-color: rgb(78, 78, 247);
+        background-color: $color-blue;
         color: white;
         display: flex;
         justify-content: flex-end;
@@ -38,7 +38,7 @@ header{
                 font-weight: bold;
                 &:hover{
                     cursor: pointer;
-                    border-bottom-color:blue;
+                    border-bottom-color:$color-blue;
                 }
 
             }
@@ -55,7 +55,7 @@ header{
  
     span{
         padding: 10px;
-        background-color: blue;
+        background-color: $color-blue;
         color: white;
         position: absolute;
         bottom: -20px;

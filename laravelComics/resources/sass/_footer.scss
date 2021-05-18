@@ -1,5 +1,49 @@
 .contact{
     background-image: url('/storage/assets/laravel-comics/footer-bg.jpg');
     padding: 40px 300px;
+    
+    div{
+        display: inline-block;
+        vertical-align: top;
+        color: $color-grey;
+        padding: 15px;
+        ul li{
+            font-size: 10px;
+        }
+        h3{
+            color: white;
+            font-size: 17px;
+            margin: 15px 0;
 
+        }
+    }
+    p{
+        color: $color-grey;
+        span{
+            color:$color-blue;
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $bg-dark;
+    ul{
+        line-height: 80px;
+        display: flex;
+        justify-content: center;
+        li{
+            margin-left: 15px;
+            &:first-child{
+                color: $color-blue;
+            }
+        }
+    }
+    .button{
+        padding: 10px 15px;
+        border: 1px solid $color-blue;
+        color: white;
+    }
 }

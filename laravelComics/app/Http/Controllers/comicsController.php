@@ -37,8 +37,9 @@ class comicsController extends Controller
                 'desc' => 'DC POWER VISA'
             ],
 
-            ];
+        ];
 
+        
         $data = [
             [
                 "title" => "Action Comics #1000: The Deluxe Edition",
@@ -253,6 +254,78 @@ class comicsController extends Controller
             ],
         ];
 
-        return view('pages.home', compact('data','navbar','merch'));
+        
+
+        $dcComics = [
+
+            'title'=>'dc comics',
+            'link'=> [
+                'characters',
+                'comics',
+                'movies',
+                'TV',
+                'games',
+                'videos',
+                'news'
+            ]
+        ];
+
+        $shop = [
+
+            'title'=> 'shop',
+            'link'=> [
+                'shop DC',
+                'shop DC Collectibles'
+            ]
+        ];
+
+        $dc = [
+
+            'title'=> 'dc',
+            'link'=> [
+                'term Of Use',
+                'privacy policy (New)',
+                'ad Choise',
+                'advertising',
+                'jobs',
+                'subscription',
+                'talent workshops',
+                'CPSC Certificates',
+                'ratings',
+                'shop Help',
+                'contact Us'
+            ]
+        ];
+
+        $sites = [
+
+            'title'=>'sites',
+            'link'=> [
+                'DC',
+                'MAD Magazine',
+                'DC KIds',
+                'DC Universe',
+                'DC Power Vista',
+                
+                
+            ]
+        ];
+        
+        return view(
+            'pages.home', 
+            compact(
+                'data',
+                'navbar',
+                'merch',
+                'dcComics',
+                'shop',
+                'dc',
+                'sites'
+            ));
+
+        
+
+        
+
     }
 } 

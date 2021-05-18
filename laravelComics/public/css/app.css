@@ -13,7 +13,7 @@ section {
 }
 
 header > section {
-  background-color: #4e4ef7;
+  background-color: #0282f9;
   color: white;
   display: flex;
   justify-content: flex-end;
@@ -54,7 +54,7 @@ header nav ul li {
 
 header nav ul li:hover {
   cursor: pointer;
-  border-bottom-color: blue;
+  border-bottom-color: #0282f9;
 }
 
 .jumbo {
@@ -67,7 +67,7 @@ header nav ul li:hover {
 
 .jumbo span {
   padding: 10px;
-  background-color: blue;
+  background-color: #0282f9;
   color: white;
   position: absolute;
   bottom: -20px;
@@ -80,7 +80,7 @@ header nav ul li:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #0e0d0d;
+  background-color: #1c1c1c;
   color: #f1eded;
 }
 
@@ -106,14 +106,14 @@ header nav ul li:hover {
 .box-container span {
   color: white;
   padding: 10px 50px;
-  background-color: blue;
+  background-color: #0282f9;
   font-size: 10px;
   font-weight: bold;
   margin: 20px auto 0;
 }
 
 .merch {
-  background-color: blue;
+  background-color: #0282f9;
   padding: 40px 300px;
   display: flex;
   justify-content: space-evenly;
@@ -138,5 +138,62 @@ header nav ul li:hover {
   color: white;
   font-size: 10px;
   margin-left: 10px;
+}
+
+.contact {
+  background-image: url("/storage/assets/laravel-comics/footer-bg.jpg");
+  padding: 40px 300px;
+}
+
+.contact div {
+  display: inline-block;
+  vertical-align: top;
+  color: #797979;
+  padding: 15px;
+}
+
+.contact div ul li {
+  font-size: 10px;
+}
+
+.contact div h3 {
+  color: white;
+  font-size: 17px;
+  margin: 15px 0;
+}
+
+.contact p {
+  color: #797979;
+}
+
+.contact p span {
+  color: #0282f9;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+}
+
+.footer ul {
+  line-height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer ul li {
+  margin-left: 15px;
+}
+
+.footer ul li:first-child {
+  color: #0282f9;
+}
+
+.footer .button {
+  padding: 10px 15px;
+  border: 1px solid #0282f9;
+  color: white;
 }
 
