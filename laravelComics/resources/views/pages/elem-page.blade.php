@@ -6,8 +6,10 @@
         <div>
             <div class="contain">
                 <img src="{{$elem['thumb']}}" alt="">
-                <span>COMIC BOOK</span>
-                <span>VIEW GALLERY</span>
+                <a href="{{ route('home')}}">
+                    <span>COMIC BOOK</span>
+                    <span>VIEW GALLERY</span>
+                </a>
             </div>
         </div>
     </div>

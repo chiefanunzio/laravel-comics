@@ -182,7 +182,7 @@ header nav ul li:last-child {
   position: relative;
 }
 
-.banner > div > div.contain > span {
+.banner > div > div.contain > a span {
   background-color: #4c8cec;
   position: absolute;
   top: 0;
@@ -190,11 +190,16 @@ header nav ul li:last-child {
   text-align: center;
   color: blanchedalmond;
   padding: 3px;
+  display: none;
 }
 
-.banner > div > div.contain > span:last-child {
+.banner > div > div.contain > a span:last-child {
   top: 268px;
   width: 100%;
+}
+
+.banner > div > div.contain:hover span {
+  display: block;
 }
 
 .elem-info {

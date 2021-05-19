@@ -10,8 +10,8 @@
 
         >div.contain {
             position: relative;
-
-            >span {
+            
+            >a span {
                 background-color: rgb(76, 140, 236);
                 position: absolute;
                 top: 0;
@@ -19,12 +19,16 @@
                 text-align: center;
                 color: blanchedalmond;
                 padding: 3px;
-
+                display: none;
                 &:last-child {
                     top: 268px;
                     width: 100%;
-
+                    
                 }
+            }
+            
+            &:hover span{
+                display: block;
             }
         }
     }
