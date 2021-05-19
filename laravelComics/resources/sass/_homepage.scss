@@ -12,10 +12,11 @@
     #btn{
         padding: 10px;
         background-color: $color-blue;
+        font-size: 20px;
         color: white;
         position: absolute;
-        top: -35px;
-        left: 300px;
+        top: -40px;
+        left: 260px;
        
     }
     
@@ -23,7 +24,7 @@
     
     .box{
         width: calc(100% / 6 - 20px);  
-        margin: 10px 10px;
+        margin: 10px 10px 20px 10px;
         a{
             text-decoration: none;
             color: white;
@@ -33,7 +34,7 @@
             
             height: 140px;
             overflow: hidden;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             img{
                 width: 100%;
                 
@@ -59,7 +60,7 @@
 
 .merch{
     background-color: $color-blue;
-    padding: 40px 300px;
+    padding: 40px 250px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;

@@ -9,7 +9,7 @@ ul {
 }
 
 section {
-  padding: 0 300px;
+  padding: 0 250px;
   overflow: hidden;
 }
 
@@ -42,7 +42,7 @@ header .search i {
 }
 
 header nav {
-  padding: 0 300px;
+  padding: 0 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,15 +98,16 @@ header nav ul li:last-child {
 .box-container #btn {
   padding: 10px;
   background-color: #0282f9;
+  font-size: 20px;
   color: white;
   position: absolute;
-  top: -35px;
-  left: 300px;
+  top: -40px;
+  left: 260px;
 }
 
 .box-container .box {
   width: calc(100% / 6 - 20px);
-  margin: 10px 10px;
+  margin: 10px 10px 20px 10px;
 }
 
 .box-container .box a {
@@ -117,7 +118,7 @@ header nav ul li:last-child {
 .box-container .box div {
   height: 140px;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .box-container .box div img {
@@ -139,7 +140,7 @@ header nav ul li:last-child {
 
 .merch {
   background-color: #0282f9;
-  padding: 40px 300px;
+  padding: 40px 250px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -165,11 +166,56 @@ header nav ul li:last-child {
   margin-left: 10px;
 }
 
+.banner {
+  position: relative;
+  background-color: #0282f9;
+  height: 50px;
+}
+
+.elem-info {
+  display: flex;
+  padding: 50px 300px;
+}
+
+.elem-info > div {
+  padding: 20px;
+}
+
+.elem-info > div > div {
+  display: flex;
+}
+
+.elem-info .header-tab {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1e5e1e;
+  border-bottom: 1px solid black;
+  padding: 10px 15px;
+}
+
+.elem-info .header-tab:first-child {
+  flex-grow: 1;
+  border-right: 1px solid black;
+}
+
+.elem-info .header-tab p {
+  color: rgba(129, 127, 127, 0.623);
+}
+
+.elem-info .header-tab span {
+  color: #d6cece;
+  margin-left: 5px;
+}
+
+.adv img {
+  width: 250px;
+}
+
 .contact {
   background-image: url("/storage/assets/laravel-comics/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 40px 300px;
+  padding: 40px 250px;
   position: relative;
 }
 

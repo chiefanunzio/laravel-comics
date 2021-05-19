@@ -1,0 +1,43 @@
+.banner{
+    position: relative;
+    background-color: $color-blue;
+    height: 50px;
+}
+
+.elem-info{
+    display: flex;
+    padding: 50px 300px;
+    >div{
+        padding: 20px;
+        >div{
+            display: flex;
+        }
+    }
+    
+    
+    .header-tab{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(30, 94, 30);
+        border-bottom: 1px solid black;
+        padding: 10px 15px;
+        &:first-child{
+            flex-grow: 1;
+            border-right: 1px solid black;
+        }
+        p{
+            color: rgba(129, 127, 127, 0.623);
+        }
+        span{
+            color: rgb(214, 206, 206);
+            margin-left: 5px;
+        }
+    }
+}
+
+.adv{
+   
+    img{
+        width: 250px;
+    }
+}
