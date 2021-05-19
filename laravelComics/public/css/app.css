@@ -177,8 +177,17 @@ header nav ul li:last-child {
   padding: 50px 300px;
 }
 
+.elem-info h1 {
+  color: #101047;
+  font-weight: 900;
+}
+
 .elem-info > div {
   padding: 20px;
+}
+
+.elem-info > div p {
+  font-size: 15px;
 }
 
 .elem-info > div > div {
@@ -191,6 +200,7 @@ header nav ul li:last-child {
   background-color: #1e5e1e;
   border-bottom: 1px solid black;
   padding: 10px 15px;
+  margin: 20px 0;
 }
 
 .elem-info .header-tab:first-child {
@@ -199,7 +209,8 @@ header nav ul li:last-child {
 }
 
 .elem-info .header-tab p {
-  color: rgba(129, 127, 127, 0.623);
+  color: rgba(153, 149, 149, 0.733);
+  font-weight: bold;
 }
 
 .elem-info .header-tab span {
@@ -207,8 +218,28 @@ header nav ul li:last-child {
   margin-left: 5px;
 }
 
+.adv {
+  text-align: right;
+  font-weight: bold;
+}
+
 .adv img {
+  margin-top: 10px;
   width: 250px;
+}
+
+.tab-section {
+  padding-top: 20px;
+  background-color: rgba(223, 215, 215, 0.733);
+  display: flex;
+}
+
+.tab-section > div ul li {
+  display: flex;
+}
+
+.tab-section > div ul li ul {
+  display: flex;
 }
 
 .contact {

@@ -7,8 +7,15 @@
 .elem-info{
     display: flex;
     padding: 50px 300px;
+    h1{
+        color: rgb(16, 16, 71);
+        font-weight:900;
+    }
     >div{
         padding: 20px;
+        p{
+            font-size: 15px;
+        }
         >div{
             display: flex;
         }
@@ -21,12 +28,14 @@
         background-color: rgb(30, 94, 30);
         border-bottom: 1px solid black;
         padding: 10px 15px;
+        margin: 20px 0;
         &:first-child{
             flex-grow: 1;
             border-right: 1px solid black;
         }
         p{
-            color: rgba(129, 127, 127, 0.623);
+            color: rgba(153, 149, 149, 0.733);
+            font-weight: bold;
         }
         span{
             color: rgb(214, 206, 206);
@@ -36,8 +45,24 @@
 }
 
 .adv{
-   
+    text-align: right;
+    font-weight: bold;
     img{
+        margin-top: 10px;
         width: 250px;
+    }
+}
+
+.tab-section{
+    padding-top: 20px;
+    background-color: rgba(223, 215, 215, 0.733);
+    display: flex;
+    >div{
+        ul li{
+            display: flex;
+            ul{
+                display: flex;
+            }
+        }
     }
 }
