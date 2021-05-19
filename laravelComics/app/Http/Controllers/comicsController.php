@@ -8,37 +8,6 @@ class comicsController extends Controller
 {
     
     public function comicsFun() {
-
-        $navbar = [
-
-            'CHARACTERS','COMICS','MOVIES','TV','GAMES','COLLECTIBLES','VIDEOS','FAN','NEWS','SHOP'
-        ];
-
-        $merch = [
-
-            [
-                'logo' => '/storage/assets/laravel-comics/buy.png',
-                'desc' => 'DIGITAL COMICS'
-            ],
-            [
-                'logo' => '/storage/assets/laravel-comics/t-shirt.png',
-                'desc' => 'DC MERCHANDISE'
-            ],
-            [
-                'logo' => '/storage/assets/laravel-comics/card.png',
-                'desc' => 'SUBRSRIPTION'
-            ],
-            [
-                'logo' => '/storage/assets/laravel-comics/loc.png',
-                'desc' => 'COMIC SHOP LOCATOR'
-            ],
-            [
-                'logo' => '/storage/assets/laravel-comics/pos.svg',
-                'desc' => 'DC POWER VISA'
-            ],
-
-        ];
-
         
         $data = [
             [
@@ -253,6 +222,38 @@ class comicsController extends Controller
                 ],
             ],
         ];
+
+        $navbar = [
+
+            'CHARACTERS','COMICS','MOVIES','TV','GAMES','COLLECTIBLES','VIDEOS','FAN','NEWS','SHOP'
+        ];
+
+        $merch = [
+
+            [
+                'logo' => '/storage/assets/laravel-comics/buy.png',
+                'desc' => 'DIGITAL COMICS'
+            ],
+            [
+                'logo' => '/storage/assets/laravel-comics/t-shirt.png',
+                'desc' => 'DC MERCHANDISE'
+            ],
+            [
+                'logo' => '/storage/assets/laravel-comics/card.png',
+                'desc' => 'SUBRSRIPTION'
+            ],
+            [
+                'logo' => '/storage/assets/laravel-comics/loc.png',
+                'desc' => 'COMIC SHOP LOCATOR'
+            ],
+            [
+                'logo' => '/storage/assets/laravel-comics/pos.svg',
+                'desc' => 'DC POWER VISA'
+            ],
+
+        ];
+
+        
 
         
 
@@ -551,8 +552,119 @@ class comicsController extends Controller
                     ],
                 ];
 
+                $navbar = [
+
+                    'CHARACTERS','COMICS','MOVIES','TV','GAMES','COLLECTIBLES','VIDEOS','FAN','NEWS','SHOP'
+                ];
+        
+                $merch = [
+        
+                    [
+                        'logo' => '/storage/assets/laravel-comics/buy.png',
+                        'desc' => 'DIGITAL COMICS'
+                    ],
+                    [
+                        'logo' => '/storage/assets/laravel-comics/t-shirt.png',
+                        'desc' => 'DC MERCHANDISE'
+                    ],
+                    [
+                        'logo' => '/storage/assets/laravel-comics/card.png',
+                        'desc' => 'SUBRSRIPTION'
+                    ],
+                    [
+                        'logo' => '/storage/assets/laravel-comics/loc.png',
+                        'desc' => 'COMIC SHOP LOCATOR'
+                    ],
+                    [
+                        'logo' => '/storage/assets/laravel-comics/pos.svg',
+                        'desc' => 'DC POWER VISA'
+                    ],
+        
+                ];
+        
+                
+        
+                
+        
+                $dcComics = [
+        
+                    'title'=>'dc comics',
+                    'link'=> [
+                        'characters',
+                        'comics',
+                        'movies',
+                        'TV',
+                        'games',
+                        'videos',
+                        'news'
+                    ]
+                ];
+        
+                $shop = [
+        
+                    'title'=> 'shop',
+                    'link'=> [
+                        'shop DC',
+                        'shop DC Collectibles'
+                    ]
+                ];
+        
+                $dc = [
+        
+                    'title'=> 'dc',
+                    'link'=> [
+                        'term Of Use',
+                        'privacy policy (New)',
+                        'ad Choise',
+                        'advertising',
+                        'jobs',
+                        'subscription',
+                        'talent workshops',
+                        'CPSC Certificates',
+                        'ratings',
+                        'shop Help',
+                        'contact Us'
+                    ]
+                ];
+        
+                $sites = [
+        
+                    'title'=>'sites',
+                    'link'=> [
+                        'DC',
+                        'MAD Magazine',
+                        'DC KIds',
+                        'DC Universe',
+                        'DC Power Vista',
+                        
+                        
+                    ]
+                ];
+        
+                $social = [
+        
+                    'facebook' => '/storage/assets/laravel-comics/fb.png',
+                    'twitter' => '/storage/assets/laravel-comics/twtt.png',
+                    'youtube' => '/storage/assets/laravel-comics/yt.png', 
+                    'pint' => '/storage/assets/laravel-comics/pint.png',
+                    'loc'=> '/storage/assets/laravel-comics/local.png',
+                ];
+
                 $elem = $data[$index];
-                return view('pages.elem-page', compact('elem'));
+                
+                return view(
+                    'pages.elem-page', 
+                    compact(
+                        'data',
+                        'navbar',
+                        'merch',
+                        'dcComics',
+                        'shop',
+                        'dc',
+                        'sites',
+                        'social',
+                        'elem'
+                    ));
     } 
 }
 
