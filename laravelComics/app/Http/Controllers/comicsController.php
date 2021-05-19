@@ -581,11 +581,7 @@ class comicsController extends Controller
                     ],
         
                 ];
-        
-                
-        
-                
-        
+
                 $dcComics = [
         
                     'title'=>'dc comics',

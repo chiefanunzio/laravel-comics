@@ -20,9 +20,7 @@
 </header>
 
 <section class="jumbo">
-    <span>
-        CURRENT SERIES
-    </span>
+    
 </section>
     
                     

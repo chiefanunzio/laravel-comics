@@ -1,6 +1,10 @@
 @extends('layouts.main-layout')
 @section('content')
 <section class="box-container">
+
+    <span id="btn">
+        CURRENT SERIES
+    </span>
     @foreach ($data as $elem)
     
     <div class="box">

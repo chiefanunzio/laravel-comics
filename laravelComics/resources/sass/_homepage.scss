@@ -7,7 +7,17 @@
     justify-content: space-between;
     background-color: $bg-dark;
     color:rgb(241, 237, 237);
-    
+    position: relative;
+    overflow: visible;
+    #btn{
+        padding: 10px;
+        background-color: $color-blue;
+        color: white;
+        position: absolute;
+        top: -35px;
+        left: 300px;
+       
+    }
     
     
     
@@ -73,3 +83,4 @@
 
     }
 }
+
