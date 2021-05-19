@@ -646,12 +646,31 @@ class comicsController extends Controller
                     'loc'=> '/storage/assets/laravel-comics/local.png',
                 ];
 
+                $card =[
+
+                    [
+                        'title' => 'digital comics',
+                        'logo' => '/storage/assets/laravel-comics/icons-1.png'
+                    ],
+                    [
+                        'title' => 'shop dc',
+                        'logo' => '/storage/assets/laravel-comics/icons-2.png'
+                    ],
+                    [
+                        'title' => 'comic shop locator',
+                        'logo' => '/storage/assets/laravel-comics/icons-3.png'
+                    ],
+                    [
+                        'title' => 'subscription',
+                        'logo' => '/storage/assets/laravel-comics/icons-4.png'
+                    ],
+                ];
+
                 $elem = $data[$index];
                 
                 return view(
                     'pages.elem-page', 
                     compact(
-                        'data',
                         'navbar',
                         'merch',
                         'dcComics',
@@ -659,6 +678,7 @@ class comicsController extends Controller
                         'dc',
                         'sites',
                         'social',
+                        'card',
                         'elem'
                     ));
     } 

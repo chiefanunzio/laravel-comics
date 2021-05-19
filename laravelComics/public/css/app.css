@@ -172,6 +172,31 @@ header nav ul li:last-child {
   height: 50px;
 }
 
+.banner > div {
+  position: absolute;
+  bottom: 10px;
+  left: 300px;
+}
+
+.banner > div > div.contain {
+  position: relative;
+}
+
+.banner > div > div.contain > span {
+  background-color: #4c8cec;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: blanchedalmond;
+  padding: 3px;
+}
+
+.banner > div > div.contain > span:last-child {
+  top: 268px;
+  width: 100%;
+}
+
 .elem-info {
   display: flex;
   padding: 50px 300px;
@@ -229,17 +254,85 @@ header nav ul li:last-child {
 }
 
 .tab-section {
-  padding-top: 20px;
+  padding: 20px 300px 0;
   background-color: rgba(223, 215, 215, 0.733);
   display: flex;
+  justify-content: space-between;
 }
 
-.tab-section > div ul li {
-  display: flex;
+.tab-section .tab {
+  flex-basis: 48%;
+  margin-left: 15px;
+  margin-bottom: 100px;
 }
 
-.tab-section > div ul li ul {
+.tab-section .tab > ul > li {
+  padding: 10px 0;
   display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+}
+
+.tab-section .tab > ul > li span {
+  font-size: 13px;
+  color: #0282f9;
+}
+
+.tab-section .tab > ul > li span:not(:last-child):after {
+  content: ",";
+  color: black;
+}
+
+.tab-section .tab > ul > li:first-child {
+  padding-bottom: 25px;
+}
+
+.tab-section .tab > ul > li h5,
+.tab-section .tab > ul > li h2 {
+  width: 60%;
+  color: #101047;
+}
+
+.tab-section .tab > ul > li h5::after {
+  content: ":";
+}
+
+.tab-section .tab > ul > li ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  width: 100%;
+}
+
+.tab-section .tab:last-child ul li {
+  justify-content: start;
+}
+
+.tab-section .tab:last-child ul li h5 {
+  width: 40%;
+}
+
+.card {
+  padding: 0 300px;
+  background-color: rgba(223, 215, 215, 0.733);
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+}
+
+.card .card-elem {
+  display: flex;
+  justify-content: space-between;
+  border-left: 1px solid grey;
+  flex-grow: 1;
+  padding: 15px;
+  font-size: 10px;
+  font-weight: 900;
+  color: rgba(99, 98, 98, 0.733);
+}
+
+.card .card-elem:last-child {
+  border-right: 1px solid grey;
 }
 
 .contact {

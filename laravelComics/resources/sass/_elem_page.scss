@@ -1,68 +1,192 @@
-.banner{
+.banner {
     position: relative;
     background-color: $color-blue;
     height: 50px;
+
+    >div {
+        position: absolute;
+        bottom: 10px;
+        left: 300px;
+
+        >div.contain {
+            position: relative;
+
+            >span {
+                background-color: rgb(76, 140, 236);
+                position: absolute;
+                top: 0;
+                left: 0;
+                text-align: center;
+                color: blanchedalmond;
+                padding: 3px;
+
+                &:last-child {
+                    top: 268px;
+                    width: 100%;
+
+                }
+            }
+        }
+    }
 }
 
-.elem-info{
+
+
+
+
+.elem-info {
     display: flex;
     padding: 50px 300px;
-    h1{
+
+    h1 {
         color: rgb(16, 16, 71);
-        font-weight:900;
+        font-weight: 900;
     }
-    >div{
+
+    >div {
         padding: 20px;
-        p{
+
+        p {
             font-size: 15px;
         }
-        >div{
+
+        >div {
             display: flex;
         }
     }
-    
-    
-    .header-tab{
+
+
+    .header-tab {
         display: flex;
         justify-content: space-between;
         background-color: rgb(30, 94, 30);
         border-bottom: 1px solid black;
         padding: 10px 15px;
         margin: 20px 0;
-        &:first-child{
+
+        &:first-child {
             flex-grow: 1;
             border-right: 1px solid black;
         }
-        p{
+
+        p {
             color: rgba(153, 149, 149, 0.733);
             font-weight: bold;
         }
-        span{
+
+        span {
             color: rgb(214, 206, 206);
             margin-left: 5px;
         }
     }
 }
 
-.adv{
+.adv {
     text-align: right;
     font-weight: bold;
-    img{
+
+    img {
         margin-top: 10px;
         width: 250px;
     }
 }
 
-.tab-section{
-    padding-top: 20px;
+.tab-section {
+    padding: 20px 300px 0;
     background-color: rgba(223, 215, 215, 0.733);
     display: flex;
-    >div{
-        ul li{
-            display: flex;
-            ul{
+    justify-content: space-between;
+
+    .tab {
+        flex-basis: 48%;
+        margin-left: 15px;
+        margin-bottom: 100px;
+
+        >ul {
+
+            >li {
+                padding: 10px 0;
                 display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid grey;
+
+                span {
+                    font-size: 13px;
+                    color: $color-blue;
+
+                    &:not(:last-child):after {
+                        content: ',';
+                        color: black;
+                    }
+
+
+
+
+
+
+
+
+                }
+
+                &:first-child {
+                    padding-bottom: 25px;
+                }
+
+                h5,
+                h2 {
+                    width: 60%;
+                    color: rgb(16, 16, 71);
+                }
+
+                h5::after {
+                    content: ':';
+                }
+
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-left: 30px;
+                    width: 100%;
+                }
+            }
+
+        }
+
+        &:last-child {
+
+            ul li {
+
+                h5 {
+                    width: 40%;
+                }
+
+                justify-content: start;
             }
         }
+    }
+}
+
+.card {
+    padding: 0 300px;
+    background-color: rgba(223, 215, 215, 0.733);
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+
+    .card-elem {
+        display: flex;
+        justify-content: space-between;
+        border-left: 1px solid grey;
+        flex-grow: 1;
+        padding: 15px;
+        font-size: 10px;
+        font-weight: 900;
+        color: rgba(99, 98, 98, 0.733);
+
+        &:last-child {
+            border-right: 1px solid grey;
+        }
+
     }
 }

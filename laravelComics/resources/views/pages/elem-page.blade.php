@@ -3,7 +3,13 @@
 
 
     <div class="banner">
-
+        <div>
+            <div class="contain">
+                <img src="{{$elem['thumb']}}" alt="">
+                <span>COMIC BOOK</span>
+                <span>VIEW GALLERY</span>
+            </div>
+        </div>
     </div>
     <section class="elem-info">
         
@@ -34,34 +40,67 @@
     </section>
 
     <section class="tab-section">
-        <div>
+        <div class="tab">
             <ul>
                 <li><h2>Talent</h2></li>
                 <li>
                     <h5>Art by</h5>
                     <ul>
-                        @foreach ($elem['artists'] as $i)
-                            <li>{{$i}}</li>
-                        @endforeach
+                        <li>
+                            @foreach ($elem['artists'] as $i)
+                                <span>{{$i}}</span>
+                            @endforeach
+                        </li>
                     </ul>
                 </li>
-            </ul>
-        </div>
 
-        <div>
-            <ul>
-                <li><h2>Talent</h2></li>
                 <li>
-                    <h5>Art by</h5>
+                    <h5>Written by</h5>
                     <ul>
-                        @foreach ($elem['artists'] as $i)
-                            <li>{{$i}}</li>
-                        @endforeach
+                        <li>
+                            @foreach ($elem['writers'] as $i)
+                            <span>{{$i}}</span>
+                            @endforeach
+                        </li>
                     </ul>
                 </li>
             </ul>
         </div>
 
+        <div class="tab">
+            <ul>
+                <li><h2>Specs</h2></li>
+                <li>
+                    <h5>Series</h5>
+                    <span>{{strToUpper($elem['series'])}}</span>
+                </li>
+                <li>
+                    <h5>U.S Price:</h5>
+                    <p>{{$elem['price']}}</p>
+                </li>
+                <li>
+                    <h5>On Sale Date</h5>
+                    <p>{{$elem['sale_date']}}</p>
+                </li>
+                    
+                    
+
+                
+            </ul>
+        </div>
+
+        
+
+    </section>
+    <section class="card">
+        @foreach ($card as $i)
+        
+            <div class="card-elem">
+                <span> {{strToUpper($i['title'])}}</span>
+                <img src="{{$i['logo']}}" alt="">
+            </div>
+                
+        @endforeach
     </section>
 
 
